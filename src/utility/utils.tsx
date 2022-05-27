@@ -10,14 +10,9 @@ const getAxiosInstance = () => {
 
 
 
-export const getMovies = (url:string) => {
+export const getAuthData = (url:string) => {
 
-    getAxiosInstance()
-    .get("3/discover/movie")
-    .then((result)=>{
-        console.log(result)
-    })
-    .catch((e)=>{
-        console.log(e)
-    })
+    return getAxiosInstance().get(url)
 }
+
+
